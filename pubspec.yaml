@@ -1,0 +1,74 @@
+name: wottors_motor_web
+description: Wottors Motor Web Site
+
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.5
+  pluto_menu_bar: ^3.0.1
+  side_navigation: ^1.0.4
+  adaptive_navbar: ^0.0.3 
+  cupertino_icons: ^1.0.2
+  material_design_icons_flutter: ^6.0.7096
+  scaled_list: ^2.0.0
+  dotted_line: ^3.1.0
+  url_launcher: ^6.1.11
+  drop_shadow_image: ^0.9.1
+  google_fonts: ^5.0.0
+  card_swiper : ^2.0.1
+  firebase_core: ^2.13.1
+  cloud_firestore: ^4.8.0
+  carousel_slider: ^4.2.1
+  footer: ^0.0.4
+  animated_text_kit: ^4.2.2
+  firestore_search: ^0.2.0
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+
+
+flutter:
+
+  
+  uses-material-design: true
+
+  
+  assets:
+    - assets/images/
+    - assets/videos/
+
+  
+
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: BebasNeue
+      fonts:
+        - asset: fonts/BebasNeue.ttf
+    
+    - family: DelightSunset
+      fonts:
+        - asset: fonts/DelightSunset.ttf
+        
