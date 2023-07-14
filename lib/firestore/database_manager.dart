@@ -21,6 +21,7 @@ class DatabaseManager {
 
     try {
       final querySnapshot = await productsList.orderBy('id').get();
+      // ignore: avoid_function_literals_in_foreach_calls
       querySnapshot.docs.forEach((element) {
         final data = (element.data() as Map<String, dynamic>);
         final imageUrlList =
@@ -31,6 +32,7 @@ class DatabaseManager {
       });
       return itemsList;
     } catch (e) {
+      // ignore: avoid_print
       print(e.toString());
       return [];
     }

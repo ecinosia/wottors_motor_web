@@ -27,6 +27,7 @@ class MobileProductDetailsPage extends StatefulWidget {
       : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _MobileProductDetailsPageState createState() =>
       _MobileProductDetailsPageState();
 }
@@ -34,7 +35,9 @@ class MobileProductDetailsPage extends StatefulWidget {
 class _MobileProductDetailsPageState extends State<MobileProductDetailsPage> {
   _emaillaunchURL() async {
     const url = 'mailto:wottorsmotor@gmail.com';
+    // ignore: deprecated_member_use
     if (await canLaunch(url)) {
+      // ignore: deprecated_member_use
       await launch(url);
     } else {
       await Clipboard.setData(

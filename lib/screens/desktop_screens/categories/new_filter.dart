@@ -107,6 +107,7 @@ class _SifirUrunlerDState extends State<SifirUrunlerD> {
           child: const DesktopHeader(),
         ),
         body: FooterView(
+          // ignore: sort_child_properties_last
           children: <Widget>[getProductListDesktop(screenSize)],
           footer: Footer(
             backgroundColor: AppColors.footerBG,

@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:footer/footer_view.dart';
 import 'package:flutter/cupertino.dart';

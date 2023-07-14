@@ -54,6 +54,7 @@ class _GetProductListDesktopState extends State<GetProductListDesktop> {
     dynamic resultant = await DatabaseManager().getProductsList();
 
     if (resultant == null) {
+      // ignore: avoid_print
       print("Unable to retrieve");
     } else {
       setState(() {

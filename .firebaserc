@@ -1,5 +1,11 @@
 {
   "projects": {
     "default": "wottors-motor"
+  },
+  "targets": {},
+  "etags": {
+    "wottors-motor": {
+      "extensionInstances": {}
+    }
   }
 }

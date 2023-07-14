@@ -58,6 +58,7 @@ class _ByPassDState extends State<ByPassD> {
       MaterialPageRoute(
         builder: (context) => MobileProductDetailsPage(
           productDetails: productDetails,
+          // ignore: prefer_const_literals_to_create_immutables
           imageUrls: [],
         ),
       ),
@@ -118,6 +119,7 @@ class _ByPassDState extends State<ByPassD> {
           child: const DesktopHeader(),
         ),
         body: FooterView(
+          // ignore: sort_child_properties_last
           children: <Widget>[getProductListDesktop(screenSize)],
           footer: Footer(
             backgroundColor: AppColors.footerBG,

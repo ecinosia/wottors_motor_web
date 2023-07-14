@@ -48,6 +48,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
       MaterialPageRoute(
         builder: (context) => MobileProductDetailsPage(
           productDetails: productDetails,
+          // ignore: prefer_const_literals_to_create_immutables
           imageUrls: [],
         ),
       ),
@@ -157,7 +158,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(UstKapakM()),
+                          onPressed: () => Get.to(const UstKapakM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Üst Kapak",
@@ -168,7 +169,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(EmmeManifoldM()),
+                          onPressed: () => Get.to(const EmmeManifoldM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Emme Manifoldu",
@@ -179,7 +180,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(TesisatM()),
+                          onPressed: () => Get.to(const TesisatM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Tesisat",
@@ -190,7 +191,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(PistonKoluM()),
+                          onPressed: () => Get.to(const PistonKoluM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Piston Kolu",
@@ -201,7 +202,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(TurboM()),
+                          onPressed: () => Get.to(const TurboM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Turbo",
@@ -212,7 +213,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(MazotPompasiM()),
+                          onPressed: () => Get.to(const MazotPompasiM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Mazot Pompası",
@@ -223,7 +224,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(VakumM()),
+                          onPressed: () => Get.to(const VakumM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Vakum",
@@ -234,7 +235,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(SilindirKapakM()),
+                          onPressed: () => Get.to(const SilindirKapakM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Silindir Kapağı",
@@ -245,7 +246,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(ByPassM()),
+                          onPressed: () => Get.to(const ByPassM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("ByPass",
@@ -256,7 +257,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(EnjektorM()),
+                          onPressed: () => Get.to(const EnjektorM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Enjektör",
@@ -267,7 +268,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(UstKafesM()),
+                          onPressed: () => Get.to(const UstKafesM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Üst Kafes",
@@ -278,7 +279,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(KasnakM()),
+                          onPressed: () => Get.to(const KasnakM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Kasnak",
@@ -289,7 +290,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(GazKelebegiM()),
+                          onPressed: () => Get.to(const GazKelebegiM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Gaz Kelebeği",
@@ -300,7 +301,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(KarterHavalandirmaM()),
+                          onPressed: () => Get.to(const KarterHavalandirmaM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainGold),
                           child: Text("Karter Havalandırıcısı",
@@ -311,7 +312,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(EgrM()),
+                          onPressed: () => Get.to(const EgrM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("EGR",
@@ -322,7 +323,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(SarjDinamosuM()),
+                          onPressed: () => Get.to(const SarjDinamosuM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Şarj Dinamosu",
@@ -333,7 +334,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(KapakM()),
+                          onPressed: () => Get.to(const KapakM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Kapak",
@@ -344,7 +345,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(CikmaMotorM()),
+                          onPressed: () => Get.to(const CikmaMotorM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Çıkma Motor",
@@ -355,7 +356,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(SifirMotorM()),
+                          onPressed: () => Get.to(const SifirMotorM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Sıfır Motor",
@@ -366,7 +367,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(MarsDinamosuM()),
+                          onPressed: () => Get.to(const MarsDinamosuM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Marş Dinamosu",
@@ -377,7 +378,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(SanzimanM()),
+                          onPressed: () => Get.to(const SanzimanM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Şanzıman",
@@ -388,7 +389,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                     Padding(
                       padding: const EdgeInsets.only(right: 8),
                       child: ElevatedButton(
-                          onPressed: () => Get.to(YagKarteriM()),
+                          onPressed: () => Get.to(const YagKarteriM()),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: AppColors.mainOrange),
                           child: Text("Yağ Karteri",
@@ -404,7 +405,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
               child: GridView.builder(
                   shrinkWrap: true,
                   itemCount: productDetailList.length,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 1),
                   itemBuilder: (context, index) {
                     return Stack(

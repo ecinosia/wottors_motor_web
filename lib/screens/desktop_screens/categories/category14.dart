@@ -59,6 +59,7 @@ class _GazKelebegiDState extends State<GazKelebegiD> {
       MaterialPageRoute(
         builder: (context) => MobileProductDetailsPage(
           productDetails: productDetails,
+          // ignore: prefer_const_literals_to_create_immutables
           imageUrls: [],
         ),
       ),
@@ -119,6 +120,7 @@ class _GazKelebegiDState extends State<GazKelebegiD> {
           child: const DesktopHeader(),
         ),
         body: FooterView(
+          // ignore: sort_child_properties_last
           children: <Widget>[getProductListDesktop(screenSize)],
           footer: Footer(
             backgroundColor: AppColors.footerBG,

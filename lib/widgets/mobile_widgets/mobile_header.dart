@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:wottors_motor_web/screens/mobile_screens/mobile_home_page.dart';
 import 'package:wottors_motor_web/widgets/app_colors.dart';
 // ignore: avoid_web_libraries_in_flutter
@@ -15,19 +13,6 @@ class MobileHeader extends StatefulWidget {
 }
 
 class _MobileHeaderState extends State<MobileHeader> {
-  _emaillaunchURL() async {
-    const url = 'mailto:wottorsmotor@gmail.com';
-    // ignore: deprecated_member_use
-    if (await canLaunch(url)) {
-      // ignore: deprecated_member_use
-      await launch(url);
-    } else {
-      await Clipboard.setData(
-          const ClipboardData(text: "wottorsmotor@gmail.com"));
-      throw 'E-Posta Adresi Kopyalandı.';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
