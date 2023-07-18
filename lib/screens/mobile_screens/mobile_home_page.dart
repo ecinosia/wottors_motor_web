@@ -79,11 +79,11 @@ class _MobileHomePageState extends State<MobileHomePage> {
                             const Duration(milliseconds: 1500),
                         autoPlayCurve: Curves.fastOutSlowIn),
                     items: [
-                      'images/ford_bg1.png',
-                      'images/ford_bg2.png',
-                      'images/ford_bg3.png',
-                      'images/ford_bg4.png',
-                      'images/ford_bg5.png',
+                      'assets/images/ford_bg1.png',
+                      'assets/images/ford_bg2.png',
+                      'assets/images/ford_bg3.png',
+                      'assets/images/ford_bg4.png',
+                      'assets/images/ford_bg5.png',
                     ].map((i) {
                       return Builder(builder: (BuildContext context) {
                         return Expanded(
@@ -95,7 +95,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                   i,
                                   width: screenSize.width,
                                 ),
-                                if (i == 'images/ford_bg1.png')
+                                if (i == 'assets/images/ford_bg1.png')
                                   Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                           30, 15, 0, 0),
@@ -116,7 +116,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                         stopPauseOnTap: false,
                                         displayFullTextOnTap: false,
                                       )),
-                                if (i == 'images/ford_bg2.png')
+                                if (i == 'assets/images/ford_bg2.png')
                                   Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                           250, 70, 0, 0),
@@ -137,7 +137,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                         stopPauseOnTap: false,
                                         displayFullTextOnTap: false,
                                       )),
-                                if (i == 'images/ford_bg3.png')
+                                if (i == 'assets/images/ford_bg3.png')
                                   Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                           50, 150, 0, 0),
@@ -158,7 +158,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                         stopPauseOnTap: false,
                                         displayFullTextOnTap: false,
                                       )),
-                                if (i == 'images/ford_bg4.png')
+                                if (i == 'assets/images/ford_bg4.png')
                                   Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                           268, 85, 0, 0),
@@ -179,7 +179,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                         stopPauseOnTap: false,
                                         displayFullTextOnTap: false,
                                       )),
-                                if (i == 'images/ford_bg5.png')
+                                if (i == 'assets/images/ford_bg5.png')
                                   Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                           30, 15, 0, 0),
@@ -251,7 +251,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               child: Column(
                                 children: [
                                   Image.asset(
-                                    "images/new_engine.png",
+                                    "assets/images/new_engine.png",
                                     width: 265,
                                   ),
                                   const SizedBox(
@@ -293,7 +293,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               child: Column(
                                 children: [
                                   Image.asset(
-                                    "images/crank.png",
+                                    "assets/images/crank.png",
                                     width: 265,
                                   ),
                                   const SizedBox(
@@ -335,7 +335,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                               child: Column(
                                 children: [
                                   Image.asset(
-                                    "images/transmission.png",
+                                    "assets/images/transmission.png",
                                     width: 265,
                                   ),
                                   const SizedBox(
@@ -375,7 +375,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                             child: Column(
                               children: [
                                 Image.asset(
-                                  "images/cyclinder_head.png",
+                                  "assets/images/cyclinder_head.png",
                                   width: 265,
                                 ),
                                 const SizedBox(
@@ -408,7 +408,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 //Third Item - Banner Image
                 SizedBox(
                   width: screenSize.width,
-                  child: Image.asset("images/ford_bg9.png"),
+                  child: Image.asset("assets/images/ford_bg9.png"),
                 ),
                 //Dotted Line
                 const SizedBox(
@@ -444,7 +444,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 5.0),
                                       child: Image.asset(
-                                        "images/team.png",
+                                        "assets/images/team.png",
                                         width: 195,
                                       ),
                                     ),
@@ -488,7 +488,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 5.0),
                                       child: Image.asset(
-                                        "images/team.png",
+                                        "assets/images/team.png",
                                         width: 240,
                                       ),
                                     ),
@@ -529,7 +529,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 5.0),
                                       child: Image.asset(
-                                        "images/fast_shipment.png",
+                                        "assets/images/fast_shipment.png",
                                         width: 195,
                                       ),
                                     ),
@@ -573,7 +573,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 5.0),
                                       child: Image.asset(
-                                        "images/fast_shipment.png",
+                                        "assets/images/fast_shipment.png",
                                         width: 240,
                                       ),
                                     ),
@@ -614,7 +614,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 5.0),
                                       child: Image.asset(
-                                        "images/happy_customer.png",
+                                        "assets/images/happy_customer.png",
                                         width: 195,
                                       ),
                                     ),
@@ -658,7 +658,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 5.0),
                                       child: Image.asset(
-                                        "images/happy_customer.png",
+                                        "assets/images/happy_customer.png",
                                         width: 240,
                                       ),
                                     ),
@@ -696,7 +696,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                   Padding(
                                     padding: const EdgeInsets.only(top: 5.0),
                                     child: Image.asset(
-                                      "images/warranty.png",
+                                      "assets/images/warranty.png",
                                       width: 195,
                                     ),
                                   ),
@@ -739,7 +739,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                   Padding(
                                     padding: const EdgeInsets.only(top: 5.0),
                                     child: Image.asset(
-                                      "images/warranty.png",
+                                      "assets/images/warranty.png",
                                       width: 240,
                                     ),
                                   ),
@@ -772,7 +772,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                 //Fifth Item - Banner Image
                 SizedBox(
                   width: screenSize.width,
-                  child: Image.asset("images/ford_bg10.png"),
+                  child: Image.asset("assets/images/ford_bg10.png"),
                 ),
                 //Dotted Line
                 const SizedBox(
@@ -804,7 +804,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                     Padding(
                       padding: const EdgeInsets.only(top: 30, bottom: 30),
                       child: Image.asset(
-                        "images/logo_text.png",
+                        "assets/images/logo_text.png",
                         width: 400,
                       ),
                     ),
@@ -887,7 +887,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                       "https://www.instagram.com/wottorsmotor/",
                                       "Wottors Motor Instagram"),
                                   icon: Image.asset(
-                                    "images/instagram_icon.png",
+                                    "assets/images/instagram_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -899,7 +899,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                       "https://www.facebook.com/WottorsMotor/",
                                       "Wottors Motor Facebook"),
                                   icon: Image.asset(
-                                    "images/facebook_icon.png",
+                                    "assets/images/facebook_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -911,7 +911,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                       "https://twitter.com/WottorsMotor",
                                       "Wottors Motor Twitter"),
                                   icon: Image.asset(
-                                    "images/twitter_icon.png",
+                                    "assets/images/twitter_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -921,7 +921,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                 child: IconButton(
                                   onPressed: () => _emaillaunchURL(),
                                   icon: Image.asset(
-                                    "images/gmail_icon.png",
+                                    "assets/images/gmail_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -933,7 +933,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                       "https://tr.pinterest.com/wottorsmotor/",
                                       "Wottors Motor Pinterest"),
                                   icon: Image.asset(
-                                    "images/pinterest_icon.png",
+                                    "assets/images/pinterest_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -943,7 +943,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                     "https://4sq.com/3kNvBZp",
                                     "Wottors Motor FourSquare"),
                                 icon: Image.asset(
-                                  "images/foursquare_icon.png",
+                                  "assets/images/foursquare_icon.png",
                                   width: 35,
                                 ),
                               ),

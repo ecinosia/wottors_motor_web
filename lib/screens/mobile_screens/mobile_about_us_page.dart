@@ -93,31 +93,31 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                       Column(
                         children: [
                           Image.asset(
-                            "images/contact_bg1.png",
+                            "assets/images/contact_bg1.png",
                           ),
                           Image.asset(
-                            "images/contact_bg1.png",
+                            "assets/images/contact_bg1.png",
                           ),
                           Image.asset(
-                            "images/contact_bg1.png",
+                            "assets/images/contact_bg1.png",
                           ),
                           Image.asset(
-                            "images/contact_bg1.png",
+                            "assets/images/contact_bg1.png",
                           ),
                           Visibility(
                             visible: visionClick || missionClick,
                             child: Image.asset(
-                              "images/contact_bg1.png",
+                              "assets/images/contact_bg1.png",
                             ),
                           ),
                           Visibility(
                             visible: missionClick,
                             child: Image.asset(
-                              "images/contact_bg1.png",
+                              "assets/images/contact_bg1.png",
                             ),
                           ),
                           Image.asset(
-                            "images/contact_bg_full.png",
+                            "assets/images/contact_bg_full.png",
                           ),
                         ],
                       ),
@@ -125,7 +125,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                       Padding(
                         padding: const EdgeInsets.only(top: 70, left: 20),
                         child: Image.asset(
-                          "images/contact_dots.png",
+                          "assets/images/contact_dots.png",
                           width: 100,
                         ),
                       ),
@@ -133,7 +133,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                       Padding(
                         padding: const EdgeInsets.only(top: 70, left: 382),
                         child: Image.asset(
-                          "images/contact_dots.png",
+                          "assets/images/contact_dots.png",
                           width: 100,
                         ),
                       ),
@@ -200,7 +200,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                   child: Column(
                                     children: [
                                       Image.asset(
-                                        "images/wottors_vision1.png",
+                                        "assets/images/wottors_vision1.png",
                                         height: 400,
                                       ),
                                       Padding(
@@ -257,7 +257,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_vision2.png",
+                                      "assets/images/wottors_vision2.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -299,7 +299,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_vision3.png",
+                                      "assets/images/wottors_vision3.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -348,7 +348,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_vision4.png",
+                                      "assets/images/wottors_vision4.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -413,7 +413,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_vision5.png",
+                                      "assets/images/wottors_vision5.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -461,7 +461,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_vision6.png",
+                                      "assets/images/wottors_vision6.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -520,7 +520,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                   child: Column(
                                     children: [
                                       Image.asset(
-                                        "images/wottors_about1.png",
+                                        "assets/images/wottors_about1.png",
                                         height: 400,
                                       ),
                                       Padding(
@@ -568,7 +568,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_about2.png",
+                                      "assets/images/wottors_about2.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -617,7 +617,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_about3.png",
+                                      "assets/images/wottors_about3.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -682,7 +682,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_about4.png",
+                                      "assets/images/wottors_about4.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -734,7 +734,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                   child: Column(
                                     children: [
                                       Image.asset(
-                                        "images/wottors_mission1.png",
+                                        "assets/images/wottors_mission1.png",
                                         height: 400,
                                       ),
                                       Padding(
@@ -790,7 +790,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_mission2.png",
+                                      "assets/images/wottors_mission2.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -848,7 +848,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_mission3.png",
+                                      "assets/images/wottors_mission3.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -890,7 +890,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_mission4.png",
+                                      "assets/images/wottors_mission4.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -939,7 +939,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_mission5.png",
+                                      "assets/images/wottors_mission5.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -988,7 +988,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_mission6.png",
+                                      "assets/images/wottors_mission6.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -1037,7 +1037,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: Column(
                                   children: [
                                     Image.asset(
-                                      "images/wottors_mission7.png",
+                                      "assets/images/wottors_mission7.png",
                                       height: 400,
                                     ),
                                     Padding(
@@ -1106,7 +1106,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                     Padding(
                       padding: const EdgeInsets.only(top: 30, bottom: 30),
                       child: Image.asset(
-                        "images/logo_text.png",
+                        "assets/images/logo_text.png",
                         width: 400,
                       ),
                     ),
@@ -1189,7 +1189,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                       "https://www.instagram.com/wottorsmotor/",
                                       "Wottors Motor Instagram"),
                                   icon: Image.asset(
-                                    "images/instagram_icon.png",
+                                    "assets/images/instagram_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -1201,7 +1201,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                       "https://www.facebook.com/WottorsMotor/",
                                       "Wottors Motor Facebook"),
                                   icon: Image.asset(
-                                    "images/facebook_icon.png",
+                                    "assets/images/facebook_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -1213,7 +1213,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                       "https://twitter.com/WottorsMotor",
                                       "Wottors Motor Twitter"),
                                   icon: Image.asset(
-                                    "images/twitter_icon.png",
+                                    "assets/images/twitter_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -1223,7 +1223,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                 child: IconButton(
                                   onPressed: () => _emaillaunchURL(),
                                   icon: Image.asset(
-                                    "images/gmail_icon.png",
+                                    "assets/images/gmail_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -1235,7 +1235,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                       "https://tr.pinterest.com/wottorsmotor/",
                                       "Wottors Motor Pinterest"),
                                   icon: Image.asset(
-                                    "images/pinterest_icon.png",
+                                    "assets/images/pinterest_icon.png",
                                     width: 35,
                                   ),
                                 ),
@@ -1245,7 +1245,7 @@ class _MobileAboutUsPageState extends State<MobileAboutUsPage> {
                                     "https://4sq.com/3kNvBZp",
                                     "Wottors Motor FourSquare"),
                                 icon: Image.asset(
-                                  "images/foursquare_icon.png",
+                                  "assets/images/foursquare_icon.png",
                                   width: 35,
                                 ),
                               ),

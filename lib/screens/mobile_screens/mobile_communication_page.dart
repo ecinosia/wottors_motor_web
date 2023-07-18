@@ -62,12 +62,12 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
               SingleChildScrollView(
                   child: Stack(
                 children: <Widget>[
-                  Image.asset("images/contact_bg.png"),
+                  Image.asset("assets/images/contact_bg.png"),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(80, 230, 0, 0),
                     child: InkWell(
                       child: Image.asset(
-                        "images/contact_web.png",
+                        "assets/images/contact_web.png",
                         width: 340,
                         height: 99,
                       ),
@@ -79,7 +79,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                     padding: const EdgeInsets.fromLTRB(80, 300, 0, 0),
                     child: InkWell(
                         child: Image.asset(
-                          "images/contact_mail.png",
+                          "assets/images/contact_mail.png",
                           width: 340,
                           height: 99,
                         ),
@@ -89,7 +89,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                     padding: const EdgeInsets.fromLTRB(80, 370, 0, 0),
                     child: InkWell(
                       child: Image.asset(
-                        "images/contact_phone1.png",
+                        "assets/images/contact_phone1.png",
                         width: 340,
                         height: 99,
                       ),
@@ -102,7 +102,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                     padding: const EdgeInsets.fromLTRB(80, 440, 0, 0),
                     child: InkWell(
                       child: Image.asset(
-                        "images/contact_phone2.png",
+                        "assets/images/contact_phone2.png",
                         width: 340,
                         height: 99,
                       ),
@@ -115,7 +115,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                     padding: const EdgeInsets.fromLTRB(80, 510, 0, 0),
                     child: InkWell(
                       child: Image.asset(
-                        "images/contact_address.png",
+                        "assets/images/contact_address.png",
                         width: 340,
                         height: 99,
                       ),
@@ -128,7 +128,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                     padding: const EdgeInsets.fromLTRB(70, 585, 0, 0),
                     child: InkWell(
                       child: Image.asset(
-                        "images/contact_map.png",
+                        "assets/images/contact_map.png",
                         width: 360,
                         height: 300,
                       ),
@@ -159,7 +159,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                       Padding(
                         padding: const EdgeInsets.only(top: 30, bottom: 30),
                         child: Image.asset(
-                          "images/logo_text.png",
+                          "assets/images/logo_text.png",
                           width: 400,
                         ),
                       ),
@@ -244,7 +244,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                                         "https://www.instagram.com/wottorsmotor/",
                                         "Wottors Motor Instagram"),
                                     icon: Image.asset(
-                                      "images/instagram_icon.png",
+                                      "assets/images/instagram_icon.png",
                                       width: 35,
                                     ),
                                   ),
@@ -256,7 +256,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                                         "https://www.facebook.com/WottorsMotor/",
                                         "Wottors Motor Facebook"),
                                     icon: Image.asset(
-                                      "images/facebook_icon.png",
+                                      "assets/images/facebook_icon.png",
                                       width: 35,
                                     ),
                                   ),
@@ -268,7 +268,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                                         "https://twitter.com/WottorsMotor",
                                         "Wottors Motor Twitter"),
                                     icon: Image.asset(
-                                      "images/twitter_icon.png",
+                                      "assets/images/twitter_icon.png",
                                       width: 35,
                                     ),
                                   ),
@@ -278,7 +278,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                                   child: IconButton(
                                     onPressed: () => _emaillaunchURL(),
                                     icon: Image.asset(
-                                      "images/gmail_icon.png",
+                                      "assets/images/gmail_icon.png",
                                       width: 35,
                                     ),
                                   ),
@@ -290,7 +290,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                                         "https://tr.pinterest.com/wottorsmotor/",
                                         "Wottors Motor Pinterest"),
                                     icon: Image.asset(
-                                      "images/pinterest_icon.png",
+                                      "assets/images/pinterest_icon.png",
                                       width: 35,
                                     ),
                                   ),
@@ -300,7 +300,7 @@ class _MobileCommunicationPageState extends State<MobileCommunicationPage> {
                                       "https://4sq.com/3kNvBZp",
                                       "Wottors Motor FourSquare"),
                                   icon: Image.asset(
-                                    "images/foursquare_icon.png",
+                                    "assets/images/foursquare_icon.png",
                                     width: 35,
                                   ),
                                 ),

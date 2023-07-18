@@ -91,7 +91,7 @@ class _DesktopHeaderState extends State<DesktopHeader> {
                       "https://www.instagram.com/wottorsmotor/",
                       "Wottors Motor Instagram"),
                   icon: Image.asset(
-                    "images/instagram_icon.png",
+                    "assets/images/instagram_icon.png",
                     width: 30,
                   ),
                 ),
@@ -100,7 +100,7 @@ class _DesktopHeaderState extends State<DesktopHeader> {
                       "https://www.facebook.com/WottorsMotor/",
                       "Wottors Motor Facebook"),
                   icon: Image.asset(
-                    "images/facebook_icon.png",
+                    "assets/images/facebook_icon.png",
                     width: 30,
                   ),
                 ),
@@ -109,14 +109,14 @@ class _DesktopHeaderState extends State<DesktopHeader> {
                       "https://twitter.com/WottorsMotor",
                       "Wottors Motor Twitter"),
                   icon: Image.asset(
-                    "images/twitter_icon.png",
+                    "assets/images/twitter_icon.png",
                     width: 30,
                   ),
                 ),
                 IconButton(
                   onPressed: () => _emaillaunchURL(),
                   icon: Image.asset(
-                    "images/gmail_icon.png",
+                    "assets/images/gmail_icon.png",
                     width: 30,
                   ),
                 ),
@@ -125,7 +125,7 @@ class _DesktopHeaderState extends State<DesktopHeader> {
                       "https://tr.pinterest.com/wottorsmotor/",
                       "Wottors Motor Pinterest"),
                   icon: Image.asset(
-                    "images/pinterest_icon.png",
+                    "assets/images/pinterest_icon.png",
                     width: 30,
                   ),
                 ),
@@ -133,7 +133,7 @@ class _DesktopHeaderState extends State<DesktopHeader> {
                   onPressed: () => html.window.open(
                       "https://4sq.com/3kNvBZp", "Wottors Motor FourSquare"),
                   icon: Image.asset(
-                    "images/foursquare_icon.png",
+                    "assets/images/foursquare_icon.png",
                     width: 30,
                   ),
                 )
@@ -186,7 +186,12 @@ class _DesktopHeaderState extends State<DesktopHeader> {
                         )),
                   ],
                 ),
-                Image.asset("images/wottors_logo.png"),
+                MouseRegion(
+                  cursor: MaterialStateMouseCursor.clickable,
+                  child: GestureDetector(
+                      onTap: () => Get.to(() => const DesktopHomePage()),
+                      child: Image.asset("assets/images/wottors_logo.png")),
+                ),
                 Row(
                   children: [
                     TextButton.icon(

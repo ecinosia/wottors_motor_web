@@ -346,7 +346,8 @@ class _KapakMState extends State<KapakM> {
                       Padding(
                         padding: const EdgeInsets.only(right: 8),
                         child: ElevatedButton(
-                            onPressed: () => Get.to(const KarterHavalandirmaM()),
+                            onPressed: () =>
+                                Get.to(const KarterHavalandirmaM()),
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: AppColors.mainOrange),
                             child: Text("Karter Havalandırıcısı",
@@ -542,13 +543,13 @@ class _KapakMState extends State<KapakM> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.fromLTRB(2, 0, 0, 0),
-                          child:
-                              Image.asset("images/wottors_product_card_bg.png"),
+                          child: Image.asset(
+                              "assets/images/wottors_product_card_bg.png"),
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(0, 120, 0, 0),
                           child: Image.asset(
-                              "images/wottors_product_card_details.png"),
+                              "assets/images/wottors_product_card_details.png"),
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(235, 340, 0, 0),
@@ -569,7 +570,7 @@ class _KapakMState extends State<KapakM> {
                                 );
                               },
                               child: Image.asset(
-                                "images/wottors_product_card_buynow.png",
+                                "assets/images/wottors_product_card_buynow.png",
                                 width: 250,
                               ),
                             ),

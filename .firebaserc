@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "wottors-motor"
+    "default": "wottors-motor",
+    "hosting, firestore": "wottors-motor"
   },
   "targets": {},
   "etags": {

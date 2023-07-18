@@ -575,14 +575,14 @@ class _GetProductListDesktopState extends State<GetProductListDesktop> {
                       padding: const EdgeInsets.only(bottom: 10),
                       child: Stack(
                         children: [
-                          Image.asset("images/product_desktop_bg.png",
+                          Image.asset("assets/images/product_desktop_bg.png",
                               width: 1000, height: 800),
                           Align(
                             alignment: Alignment.center,
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                               child: Image.asset(
-                                "images/product_desktop_detail.png",
+                                "assets/images/product_desktop_detail.png",
                                 width: 210,
                               ),
                             ),
@@ -639,7 +639,7 @@ class _GetProductListDesktopState extends State<GetProductListDesktop> {
                                   width: 120,
                                   height: 30,
                                   child: Image.asset(
-                                    "images/product_desktop_buynow1.png",
+                                    "assets/images/product_desktop_buynow1.png",
                                   ),
                                 ),
                               ),

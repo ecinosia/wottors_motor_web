@@ -1,9 +1,12 @@
 import 'package:dotted_line/dotted_line.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wottors_motor_web/screens/mobile_screens/categories/category1.dart';
 import 'package:wottors_motor_web/screens/mobile_screens/categories/category22.dart';
+import 'package:wottors_motor_web/screens/mobile_screens/categories/new_filter.dart';
+import 'package:wottors_motor_web/screens/mobile_screens/categories/used_filter.dart';
 
 import '../../../firestore/database_manager.dart';
 import '../../../firestore/get_product_details_mobile.dart';
@@ -78,6 +81,9 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
     }
   }
 
+  bool _showCategories = true;
+  bool _showProdStatus = true;
+
   updateData(
       String name, String category, int id, List<String> imageUrls) async {
     await DatabaseManager().updateProductList(name, category, id, imageUrls);
@@ -116,288 +122,413 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
               width: screenSize.width,
               child: Padding(
                 padding: const EdgeInsets.only(top: 10, left: 5),
-                child: Text(
-                  "Kategoriler: ",
-                  style: GoogleFonts.righteous(
-                      textStyle:
-                          TextStyle(fontSize: 20, color: AppColors.mainBlue)),
-                  textAlign: TextAlign.left,
+                child: ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _showCategories = !_showCategories;
+                    });
+                  },
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.transparent,
+                      backgroundColor: Colors.transparent,
+                      elevation: 0),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Kategoriler ",
+                        style: GoogleFonts.righteous(
+                            textStyle: TextStyle(
+                                fontSize: 20, color: AppColors.mainBlue)),
+                        textAlign: TextAlign.left,
+                      ),
+                      Icon(
+                        _showCategories
+                            ? CupertinoIcons.arrowtriangle_down_fill
+                            : CupertinoIcons.arrowtriangle_up_fill,
+                        size: 15,
+                        color: AppColors.mainBlue,
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
             CustomScrollbarWithSingleChildScrollView(
               controller: controller,
               scrollDirection: Axis.horizontal,
-              child: SizedBox(
-                height: 65,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 8, right: 8),
-                      child: ElevatedButton(
-                          onPressed: () =>
-                              Get.to(() => const MobileProductListPage()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Tüm Ürünler",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const KrankM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Krank",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const UstKapakM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Üst Kapak",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const EmmeManifoldM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Emme Manifoldu",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const TesisatM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Tesisat",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const PistonKoluM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Piston Kolu",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const TurboM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Turbo",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const MazotPompasiM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Mazot Pompası",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const VakumM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Vakum",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const SilindirKapakM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Silindir Kapağı",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const ByPassM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("ByPass",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const EnjektorM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Enjektör",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const UstKafesM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Üst Kafes",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const KasnakM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Kasnak",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const GazKelebegiM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Gaz Kelebeği",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const KarterHavalandirmaM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainGold),
-                          child: Text("Karter Havalandırıcısı",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const EgrM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("EGR",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const SarjDinamosuM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Şarj Dinamosu",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const KapakM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Kapak",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const CikmaMotorM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Çıkma Motor",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const SifirMotorM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Sıfır Motor",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const MarsDinamosuM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Marş Dinamosu",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const SanzimanM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Şanzıman",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8),
-                      child: ElevatedButton(
-                          onPressed: () => Get.to(const YagKarteriM()),
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.mainOrange),
-                          child: Text("Yağ Karteri",
-                              style: GoogleFonts.righteous(
-                                  textStyle: TextStyle(
-                                      color: AppColors.black, fontSize: 18)))),
-                    ),
-                  ],
+              child: Offstage(
+                offstage: _showCategories,
+                child: SizedBox(
+                  height: 65,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8, right: 8),
+                        child: ElevatedButton(
+                            onPressed: () =>
+                                Get.to(() => const MobileProductListPage()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Tüm Ürünler",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const KrankM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Krank",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const UstKapakM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Üst Kapak",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const EmmeManifoldM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Emme Manifoldu",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const TesisatM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Tesisat",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const PistonKoluM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Piston Kolu",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const TurboM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Turbo",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const MazotPompasiM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Mazot Pompası",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const VakumM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Vakum",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const SilindirKapakM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Silindir Kapağı",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const ByPassM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("ByPass",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const EnjektorM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Enjektör",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const UstKafesM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Üst Kafes",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const KasnakM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Kasnak",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const GazKelebegiM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Gaz Kelebeği",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () =>
+                                Get.to(const KarterHavalandirmaM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainGold),
+                            child: Text("Karter Havalandırıcısı",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const EgrM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("EGR",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const SarjDinamosuM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Şarj Dinamosu",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const KapakM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Kapak",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const CikmaMotorM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Çıkma Motor",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const SifirMotorM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Sıfır Motor",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const MarsDinamosuM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Marş Dinamosu",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const SanzimanM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Şanzıman",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                            onPressed: () => Get.to(const YagKarteriM()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Yağ Karteri",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: screenSize.width,
+              child: Padding(
+                padding: const EdgeInsets.only(top: 10, left: 5),
+                child: ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _showProdStatus = !_showProdStatus;
+                    });
+                  },
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.transparent,
+                      backgroundColor: Colors.transparent,
+                      elevation: 0),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Ürün Durumu ",
+                        style: GoogleFonts.righteous(
+                            textStyle: TextStyle(
+                                fontSize: 20, color: AppColors.mainBlue)),
+                        textAlign: TextAlign.left,
+                      ),
+                      Icon(
+                        _showProdStatus
+                            ? CupertinoIcons.arrowtriangle_down_fill
+                            : CupertinoIcons.arrowtriangle_up_fill,
+                        size: 15,
+                        color: AppColors.mainBlue,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            CustomScrollbarWithSingleChildScrollView(
+              controller: controller,
+              scrollDirection: Axis.horizontal,
+              child: Offstage(
+                offstage: _showProdStatus,
+                child: SizedBox(
+                  height: 65,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8, right: 8),
+                        child: ElevatedButton(
+                            onPressed: () =>
+                                Get.to(() => const NewProductFilter()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Sıfır",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8, right: 8),
+                        child: ElevatedButton(
+                            onPressed: () =>
+                                Get.to(() => const UsedProductFilter()),
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: AppColors.mainOrange),
+                            child: Text("Çıkma",
+                                style: GoogleFonts.righteous(
+                                    textStyle: TextStyle(
+                                        color: AppColors.black,
+                                        fontSize: 18)))),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -412,13 +543,13 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.fromLTRB(2, 0, 0, 0),
-                          child:
-                              Image.asset("images/wottors_product_card_bg.png"),
+                          child: Image.asset(
+                              "assets/images/wottors_product_card_bg.png"),
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(0, 120, 0, 0),
                           child: Image.asset(
-                              "images/wottors_product_card_details.png"),
+                              "assets/images/wottors_product_card_details.png"),
                         ),
                         Padding(
                           padding: const EdgeInsets.fromLTRB(235, 340, 0, 0),
@@ -439,7 +570,7 @@ class _KarterHavalandirmaMState extends State<KarterHavalandirmaM> {
                                 );
                               },
                               child: Image.asset(
-                                "images/wottors_product_card_buynow.png",
+                                "assets/images/wottors_product_card_buynow.png",
                                 width: 250,
                               ),
                             ),

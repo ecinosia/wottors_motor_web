@@ -31,7 +31,7 @@ class _MobileHeaderState extends State<MobileHeader> {
               child: InkWell(
                 onTap: () => Get.to(const MobileHomePage()),
                 child: Image.asset(
-                  "images/wottors_logo.png",
+                  "assets/images/wottors_logo.png",
                   height: 95,
                 ),
               ),
@@ -53,7 +53,7 @@ class _MobileHeaderState extends State<MobileHeader> {
             child: InkWell(
               onTap: () => Get.to(const MobileHomePage()),
               child: Image.asset(
-                "images/wottors_logo.png",
+                "assets/images/wottors_logo.png",
                 width: screenSize.width,
                 height: 60,
               ),
@@ -66,7 +66,7 @@ class _MobileHeaderState extends State<MobileHeader> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Image.asset(
-                  "images/phone-icon.png",
+                  "assets/images/phone-icon.png",
                   width: 35,
                   height: 35,
                 ),
@@ -80,7 +80,7 @@ class _MobileHeaderState extends State<MobileHeader> {
                 ),
                 const SizedBox(width: 5),
                 Image.asset(
-                  "images/phone-icon.png",
+                  "assets/images/phone-icon.png",
                   width: 35,
                   height: 35,
                 ),
@@ -98,7 +98,7 @@ class _MobileHeaderState extends State<MobileHeader> {
                       "https://www.instagram.com/wottorsmotor",
                       "Wottors Motor Instagram"),
                   child: Image.asset(
-                    "images/instagram-icon.png",
+                    "assets/images/instagram-icon.png",
                     width: 35,
                     height: 35,
                   ),

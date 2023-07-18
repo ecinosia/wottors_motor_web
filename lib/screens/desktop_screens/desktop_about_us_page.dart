@@ -120,20 +120,20 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                   Stack(
                     children: [
                       Image.asset(
-                        "images/long_bg.png",
+                        "assets/images/long_bg.png",
                         repeat: ImageRepeat.repeatX,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 125, left: 60),
                         child: Image.asset(
-                          "images/contact_dots.png",
+                          "assets/images/contact_dots.png",
                           width: 150,
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 125, left: 1335),
                         child: Image.asset(
-                          "images/contact_dots.png",
+                          "assets/images/contact_dots.png",
                           width: 150,
                         ),
                       ),
@@ -201,7 +201,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_vision1.png",
+                                        "assets/images/wottors_vision1.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -296,7 +296,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_vision2.png",
+                                        "assets/images/wottors_vision2.png",
                                         height: 420,
                                       ),
                                     ],
@@ -316,7 +316,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_vision3.png",
+                                        "assets/images/wottors_vision3.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -441,7 +441,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_vision4.png",
+                                        "assets/images/wottors_vision4.png",
                                         height: 420,
                                       ),
                                     ],
@@ -461,7 +461,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_vision5.png",
+                                        "assets/images/wottors_vision5.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -565,7 +565,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_vision6.png",
+                                        "assets/images/wottors_vision6.png",
                                         height: 420,
                                       ),
                                     ],
@@ -593,7 +593,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_about1.png",
+                                        "assets/images/wottors_about1.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -688,7 +688,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_about2.png",
+                                        "assets/images/wottors_about2.png",
                                         height: 420,
                                       ),
                                     ],
@@ -708,7 +708,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_about3.png",
+                                        "assets/images/wottors_about3.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -825,7 +825,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_about4.png",
+                                        "assets/images/wottors_about4.png",
                                         height: 420,
                                       ),
                                     ],
@@ -853,7 +853,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_mission1.png",
+                                        "assets/images/wottors_mission1.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -968,7 +968,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_mission2.png",
+                                        "assets/images/wottors_mission2.png",
                                         height: 420,
                                       ),
                                     ],
@@ -988,7 +988,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_mission3.png",
+                                        "assets/images/wottors_mission3.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -1083,7 +1083,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_mission4.png",
+                                        "assets/images/wottors_mission4.png",
                                         height: 420,
                                       ),
                                     ],
@@ -1103,7 +1103,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_mission5.png",
+                                        "assets/images/wottors_mission5.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -1207,7 +1207,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         ),
                                       ),
                                       Image.asset(
-                                        "images/wottors_mission6.png",
+                                        "assets/images/wottors_mission6.png",
                                         height: 420,
                                       ),
                                     ],
@@ -1227,7 +1227,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Image.asset(
-                                        "images/wottors_mission7.png",
+                                        "assets/images/wottors_mission7.png",
                                         height: 420,
                                       ),
                                       Padding(
@@ -1304,7 +1304,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                     Padding(
                       padding: const EdgeInsets.only(top: 30, bottom: 30),
                       child: Image.asset(
-                        "images/logo_text.png",
+                        "assets/images/logo_text.png",
                         width: 400,
                       ),
                     ),
@@ -1424,7 +1424,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                     "https://www.instagram.com/wottorsmotor/",
                                     "Wottors Motor Instagram"),
                                 icon: Image.asset(
-                                  "images/instagram_icon.png",
+                                  "assets/images/instagram_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -1436,7 +1436,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                     "https://www.facebook.com/WottorsMotor/",
                                     "Wottors Motor Facebook"),
                                 icon: Image.asset(
-                                  "images/facebook_icon.png",
+                                  "assets/images/facebook_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -1448,7 +1448,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                     "https://twitter.com/WottorsMotor",
                                     "Wottors Motor Twitter"),
                                 icon: Image.asset(
-                                  "images/twitter_icon.png",
+                                  "assets/images/twitter_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -1458,7 +1458,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                               child: IconButton(
                                 onPressed: () => _emaillaunchURL(),
                                 icon: Image.asset(
-                                  "images/gmail_icon.png",
+                                  "assets/images/gmail_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -1470,7 +1470,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                     "https://tr.pinterest.com/wottorsmotor/",
                                     "Wottors Motor Pinterest"),
                                 icon: Image.asset(
-                                  "images/pinterest_icon.png",
+                                  "assets/images/pinterest_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -1480,7 +1480,7 @@ class _DesktopAboutUsPageState extends State<DesktopAboutUsPage> {
                                   "https://4sq.com/3kNvBZp",
                                   "Wottors Motor FourSquare"),
                               icon: Image.asset(
-                                "images/foursquare_icon.png",
+                                "assets/images/foursquare_icon.png",
                                 width: 35,
                               ),
                             ),

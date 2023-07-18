@@ -97,33 +97,33 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
               child: Stack(
                 children: [
                   Image.asset(
-                    "images/contact_bg_full.png",
+                    "assets/images/contact_bg_full.png",
                     repeat: ImageRepeat.repeatX,
                   ),
                   Align(
                     alignment: Alignment.topCenter,
                     child: Image.asset(
-                      "images/contact_topic.png",
+                      "assets/images/contact_topic.png",
                       width: 1000,
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 125, left: 60),
                     child: Image.asset(
-                      "images/contact_dots.png",
+                      "assets/images/contact_dots.png",
                       width: 150,
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 125, left: 1335),
                     child: Image.asset(
-                      "images/contact_dots.png",
+                      "assets/images/contact_dots.png",
                       width: 150,
                     ),
                   ),
                   Center(
                     child: Image.asset(
-                      "images/contact_phone.png",
+                      "assets/images/contact_phone.png",
                       width: 650,
                     ),
                   ),
@@ -133,7 +133,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                       padding: const EdgeInsets.only(top: 350),
                       child: InkWell(
                         child: Image.asset(
-                          "images/contact_web.png",
+                          "assets/images/contact_web.png",
                           width: 530,
                         ),
                         onTap: () => html.window.open(
@@ -147,7 +147,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                       padding: const EdgeInsets.only(top: 450),
                       child: InkWell(
                         child: Image.asset(
-                          "images/contact_mail.png",
+                          "assets/images/contact_mail.png",
                           width: 530,
                         ),
                         onTap: () => _emaillaunchURL(),
@@ -160,7 +160,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                       padding: const EdgeInsets.only(top: 550),
                       child: InkWell(
                         child: Image.asset(
-                          "images/contact_phone1.png",
+                          "assets/images/contact_phone1.png",
                           width: 530,
                         ),
                         onTap: () => html.window.open(
@@ -175,7 +175,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                       padding: const EdgeInsets.only(top: 650),
                       child: InkWell(
                         child: Image.asset(
-                          "images/contact_phone2.png",
+                          "assets/images/contact_phone2.png",
                           width: 530,
                         ),
                         onTap: () => html.window.open(
@@ -190,7 +190,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                       padding: const EdgeInsets.only(top: 750),
                       child: InkWell(
                         child: Image.asset(
-                          "images/contact_address.png",
+                          "assets/images/contact_address.png",
                           width: 530,
                         ),
                         onTap: () => html.window.open(
@@ -205,7 +205,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                       padding: const EdgeInsets.only(top: 850),
                       child: InkWell(
                         child: Image.asset(
-                          "images/contact_map.png",
+                          "assets/images/contact_map.png",
                           width: 530,
                         ),
                         onTap: () => html.window.open(
@@ -237,7 +237,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                   Padding(
                     padding: const EdgeInsets.only(top: 30, bottom: 30),
                     child: Image.asset(
-                      "images/logo_text.png",
+                      "assets/images/logo_text.png",
                       width: 400,
                     ),
                   ),
@@ -356,7 +356,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                                   "https://www.instagram.com/wottorsmotor/",
                                   "Wottors Motor Instagram"),
                               icon: Image.asset(
-                                "images/instagram_icon.png",
+                                "assets/images/instagram_icon.png",
                                 width: 35,
                               ),
                             ),
@@ -368,7 +368,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                                   "https://www.facebook.com/WottorsMotor/",
                                   "Wottors Motor Facebook"),
                               icon: Image.asset(
-                                "images/facebook_icon.png",
+                                "assets/images/facebook_icon.png",
                                 width: 35,
                               ),
                             ),
@@ -380,7 +380,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                                   "https://twitter.com/WottorsMotor",
                                   "Wottors Motor Twitter"),
                               icon: Image.asset(
-                                "images/twitter_icon.png",
+                                "assets/images/twitter_icon.png",
                                 width: 35,
                               ),
                             ),
@@ -390,7 +390,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                             child: IconButton(
                               onPressed: () => _emaillaunchURL(),
                               icon: Image.asset(
-                                "images/gmail_icon.png",
+                                "assets/images/gmail_icon.png",
                                 width: 35,
                               ),
                             ),
@@ -402,7 +402,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                                   "https://tr.pinterest.com/wottorsmotor/",
                                   "Wottors Motor Pinterest"),
                               icon: Image.asset(
-                                "images/pinterest_icon.png",
+                                "assets/images/pinterest_icon.png",
                                 width: 35,
                               ),
                             ),
@@ -412,7 +412,7 @@ class _DesktopCommunicationPageState extends State<DesktopCommunicationPage> {
                                 "https://4sq.com/3kNvBZp",
                                 "Wottors Motor FourSquare"),
                             icon: Image.asset(
-                              "images/foursquare_icon.png",
+                              "assets/images/foursquare_icon.png",
                               width: 35,
                             ),
                           ),

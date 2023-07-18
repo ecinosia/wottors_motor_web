@@ -127,7 +127,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                     Padding(
                       padding: const EdgeInsets.only(top: 30, bottom: 30),
                       child: Image.asset(
-                        "images/logo_text.png",
+                        "assets/images/logo_text.png",
                         width: 400,
                       ),
                     ),
@@ -247,7 +247,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                                     "https://www.instagram.com/wottorsmotor/",
                                     "Wottors Motor Instagram"),
                                 icon: Image.asset(
-                                  "images/instagram_icon.png",
+                                  "assets/images/instagram_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -259,7 +259,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                                     "https://www.facebook.com/WottorsMotor/",
                                     "Wottors Motor Facebook"),
                                 icon: Image.asset(
-                                  "images/facebook_icon.png",
+                                  "assets/images/facebook_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -271,7 +271,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                                     "https://twitter.com/WottorsMotor",
                                     "Wottors Motor Twitter"),
                                 icon: Image.asset(
-                                  "images/twitter_icon.png",
+                                  "assets/images/twitter_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -281,7 +281,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                               child: IconButton(
                                 onPressed: () => _emaillaunchURL(),
                                 icon: Image.asset(
-                                  "images/gmail_icon.png",
+                                  "assets/images/gmail_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -293,7 +293,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                                     "https://tr.pinterest.com/wottorsmotor/",
                                     "Wottors Motor Pinterest"),
                                 icon: Image.asset(
-                                  "images/pinterest_icon.png",
+                                  "assets/images/pinterest_icon.png",
                                   width: 35,
                                 ),
                               ),
@@ -303,7 +303,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                                   "https://4sq.com/3kNvBZp",
                                   "Wottors Motor FourSquare"),
                               icon: Image.asset(
-                                "images/foursquare_icon.png",
+                                "assets/images/foursquare_icon.png",
                                 width: 35,
                               ),
                             ),
@@ -843,14 +843,14 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                       padding: const EdgeInsets.only(bottom: 10),
                       child: Stack(
                         children: [
-                          Image.asset("images/product_desktop_bg.png",
+                          Image.asset("assets/images/product_desktop_bg.png",
                               width: 1000, height: 800),
                           Align(
                             alignment: Alignment.center,
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                               child: Image.asset(
-                                "images/product_desktop_detail.png",
+                                "assets/images/product_desktop_detail.png",
                                 width: 210,
                               ),
                             ),
@@ -907,7 +907,7 @@ class _CikmaUrunlerDState extends State<CikmaUrunlerD> {
                                   width: 120,
                                   height: 30,
                                   child: Image.asset(
-                                    "images/product_desktop_buynow1.png",
+                                    "assets/images/product_desktop_buynow1.png",
                                   ),
                                 ),
                               ),

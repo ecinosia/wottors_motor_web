@@ -42,29 +42,29 @@ class _MobileSideBarState extends State<MobileSideBar> {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: AppColors.grey,
-      child: ListView(
+      child: Column(
         children: [
-          //Header Logo
           DrawerHeader(
             child: InkWell(
                 onTap: () => Get.to(const MobileHomePage()),
-                child: Image.asset("images/wottors_logo.png")),
+                child: Image.asset("assets/images/wottors_logo.png")),
           ),
           //Home Page Button
           ListTile(
-              leading: Icon(
-                CupertinoIcons.house_fill,
-                color: AppColors.mainBlue,
+            leading: Icon(
+              CupertinoIcons.house_fill,
+              color: AppColors.mainBlue,
+            ),
+            title: Text(
+              "ANA SAYFA",
+              style: TextStyle(
+                color: AppColors.black,
+                fontFamily: 'BebasNeue',
+                fontSize: 15,
               ),
-              title: Text(
-                "ANA SAYFA",
-                style: TextStyle(
-                  color: AppColors.black,
-                  fontFamily: 'BebasNeue',
-                  fontSize: 15,
-                ),
-              ),
-              onTap: () => Get.to(const MobileHomePage())),
+            ),
+            onTap: () => Get.to(const MobileHomePage()),
+          ),
           const DottedLine(),
           //Product Button
           ListTile(
@@ -136,7 +136,7 @@ class _MobileSideBarState extends State<MobileSideBar> {
                       "https://www.instagram.com/wottorsmotor/",
                       "Wottors Motor Instagram"),
                   icon: Image.asset(
-                    "images/instagram_icon_blue.png",
+                    "assets/images/instagram_icon_blue.png",
                     width: 30,
                   ),
                 ),
@@ -145,7 +145,7 @@ class _MobileSideBarState extends State<MobileSideBar> {
                       "https://www.facebook.com/WottorsMotor/",
                       "Wottors Motor Facebook"),
                   icon: Image.asset(
-                    "images/facebook_icon_blue.png",
+                    "assets/images/facebook_icon_blue.png",
                     width: 30,
                   ),
                 ),
@@ -154,14 +154,14 @@ class _MobileSideBarState extends State<MobileSideBar> {
                       "https://twitter.com/WottorsMotor",
                       "Wottors Motor Twitter"),
                   icon: Image.asset(
-                    "images/twitter_icon_blue.png",
+                    "assets/images/twitter_icon_blue.png",
                     width: 30,
                   ),
                 ),
                 IconButton(
                   onPressed: () => _emaillaunchURL(),
                   icon: Image.asset(
-                    "images/gmail_icon_blue.png",
+                    "assets/images/gmail_icon_blue.png",
                     width: 30,
                   ),
                 ),
@@ -170,7 +170,7 @@ class _MobileSideBarState extends State<MobileSideBar> {
                       "https://tr.pinterest.com/wottorsmotor/",
                       "Wottors Motor Pinterest"),
                   icon: Image.asset(
-                    "images/pinterest_icon_blue.png",
+                    "assets/images/pinterest_icon_blue.png",
                     width: 30,
                   ),
                 ),
@@ -178,7 +178,7 @@ class _MobileSideBarState extends State<MobileSideBar> {
                   onPressed: () => html.window.open(
                       "https://4sq.com/3kNvBZp", "Wottors Motor FourSquare"),
                   icon: Image.asset(
-                    "images/foursquare_icon_blue.png",
+                    "assets/images/foursquare_icon_blue.png",
                     width: 30,
                   ),
                 ),
